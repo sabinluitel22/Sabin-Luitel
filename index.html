@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-dTvepBRrjAPt/Dj0SL2BzFqKktN3VIkq6dEyFWPBy6UJZD1PHb/jRTt8+2HpXZrR" crossorigin="anonymous">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/e35f541b33.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li>
+              <a href="#home">Home</a> <br> 
+              <a href="#about">About</a> <br> 
+              <a href="#services">Services</a> <br>
+              <a href="#portfolio">Portfolio</a> <br>
+              <a href="#contact">Contact</a> <br>
+            </li>
+
+            <i class="fas fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+            
+        </nav>
+        
+
+        <div class="header-text">
+          <p>web designer</p>
+          <h1>
+            Hi, I am <span>Sabin</span><br />
+            from Letang
+          </h1>
+        </div>
+      
+     
+      </div>
+    </div>
+    <!--------------------ABOUT--------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img
+              src="images/382980306_665809875646080_7067458965344579189_n - Copy.jpg"
+              height="300px"
+            />
+          </div>
+          <div class="about-col-2" margin-top="200px">
+            <h1 class="sub-title">About Me</h1>
+           <div class="about">
+            <p>
+              Hi, I'm Sabin Luitel, a web and <br>
+              app designer appealing and user <br>
+              experiences. With a focus on <br>
+              modern design trends, I craft <br>
+              websites that leave a lasting <br>
+             impression and apps that prioritize <br>
+              for user interfaces. Let's collaborate <br>
+              to bring your digital projects to life.
+            </p>
+        </div>
+            <div class="tab-title">
+              <p
+                class="tab-links active-link"
+                data-tab-id="skills" 
+                onclick="opentab('skills')"
+              >
+                Skills
+              </p>
+              <p
+                class="tab-links"
+                data-tab-id="experiences"
+                onclick="opentab('experiences')"
+              >
+                Experiences
+              </p>
+              <p
+                class="tab-links"
+                data-tab-id="education"
+                onclick="opentab('education')"
+              >
+                Education
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>UI designing</span> <br />Designing web app interface
+                </li>
+                <li><span>Web development</span> <br />Designing website</li>
+                <li>
+                  <span>App development</span> <br />building Android and IOS
+                  app
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experiences">
+              <ul>
+                <li><span>OJT</span> <br />Teaching Junior student</li>
+                <li><span>Developer</span> <br />Developed many application</li>
+                <li><span>Designer</span> <br />Designing Many Website</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>SEE</span> <br />Complete School Level Examination
+                </li>
+                <li><span>HTML</span> <br />Complete all HTML classes</li>
+                <li>
+                  <span>Java Programming</span> <br />Complete all Course of
+                  coding </li>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---------------------services--------------------->
+    <div id="services">
+      <div class="conatiner">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-brands fa-webflow"></i>
+            <h2>Web design</h2>
+            <p>
+              I will provide you with a list of services, and you can tell me
+              which ones you would like me to do.
+            </p>
+            <a href="learn more">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-apple"></i>
+            <h2>IOS app design</h2>
+            <p>
+              iI will provide you with a list of services, and you can tell me
+              which ones you would like me to do.
+            </p>
+            <a href="learn more">Learn More</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-android"></i>
+            <h2>Android app design</h2>
+            <p>
+              I will provide you with a list of services, and you can tell me
+              which ones you would like me to do.
+            </p>
+            <a href="learn more">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------------portfolio------------>
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                The app connected you the talanted people in the world. download
+                it form playstore.
+              </p>
+              <a href="#"><i class="fa-solid fa-link-slash"></i></a>
+            </div>
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                The app connected you the talanted people in the world. download
+                it form playstore.
+              </p>
+              <a href="#"><i class="fa-solid fa-link-slash"></i></a>
+            </div>
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                The app connected you the talanted people in the world. download
+                it form playstore.
+              </p>
+              <a href="#"><i class="fa-solid fa-link-slash"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>
+                The app connected you the talanted people in the world. download
+                it form playstore.
+              </p>
+              <a href="#"><i class="fa-solid fa-link-slash"></i></a>
+            </div>
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>
+                The app connected you the talanted people in the world. download
+                it form playstore.
+              </p>
+              <a href="#"><i class="fa-solid fa-link-slash"></i></a>
+            </div>
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>
+                The app connected you the talanted people in the world. download
+                it form playstore.
+              </p>
+              <a href="#"><i class="fa-solid fa-link-slash"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-1.png" />
+
+
+            <div class="layer">
+              <h3>Online Shopping App</h3>
+              <p>
+                The app connected you the talanted people in the world. download
+                it form playstore.
+              </p>
+              <a href="#"><i class="fa-solid fa-link-slash"></i></a>
+            </div>
+            <div class="layer">
+              <h3>Online Shopping App</h3>
+              <p>
+                The app connected you the talanted people in the world. download
+                it form playstore.
+              </p>
+              <a href="#"><i class="fa-solid fa-link-slash"></i></a>
+            </div>
+            <div class="layer">
+              <h3>Online Shopping App</h3>
+              <p>
+                The app connected you the talanted people in the world. download
+                it form playstore.
+              </p>
+              <a href="#"><i class="fa-solid fa-link-slash"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+        
+      </div>
+    </div>
+    <!------------------contact------------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 sub-title>Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>sabinluitel2222@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i> 9745870630</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/sabin.luitel.5201"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                href="https://l.facebook.com/l.php?u=https%3A%2F%2Ftwitter.com%2Fhome%3Futm_source%3DliteAPK%26utm_medium%3Dshortcut%26first_run%3Dfalse%26fbclid%3DIwAR2UHHmgC9vn24AtLriNDHV2hte29TBmNX4JU_HweOBoVEFBXu3W_WUXvfI&h=AT2xNatTpsHfApeXyV5KV2I3Ge4YeCtIlRqxdZyidw8SiCvZAyMQ8-T17ugTAUFNCZZt2m2vqDaPpOUiqrxYdB_DwGL9VhEHX8Cmi3Fnhl3fKa0reGWSFUdywrGfeARjnqDsla5TWY5i25I"
+                ><i class="fa-brands fa-square-twitter"></i
+              ></a>
+              <a
+                href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2F_u%2Fsabinluitel100%3Ffbclid%3DIwAR3_tp07bqvgpAbWDpqmP39nxhWEfJXf-Cj1gKkHzR6PG--rAyCZxtt5WL4&h=AT0u_tqtUZQka3W_LFz3azBXZ3TzNuv0fZGhcJccjv6rZoqOTrxOVdMPqYzqjnDuiXtRLB6bPM5IWGq9RCdfYOBSQWIq72zSjBu4xKUg2xpsweQjdr5o6PWBg8UbHifKmGAAMTlWGADM-uZ8"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.tiktok.com%2F%40sabinluitel10%3F_t%3D8hzMDGEr8pF%26_r%3D1%26fbclid%3DIwAR1CAAZwKpnJq28daNDGc86ZONx4ASVTrM4t_Lbq-MfYBKEpwr12xJFqJFY&h=AT34Mp7wP0zKVjPwljc-5jgRrpyK8b1f6Nsmgd2ePzgyd6v-262jRJD5ZQ-qsrLSCyHDvaTOnuZ0Edsz8mdmw1sn9y4ZziE3oKtJlg-BH8hpOFsvYrpW5IcspcoDI96CfW9qkgivTPAwh8g"
+                ><i class="fa-brands fa-tiktok"></i
+              ></a>
+              <a
+                href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fsabin-luitel-988b9b2a0%3Ffbclid%3DIwAR0sRgLlVrN4UAAj3BZsNZKELB6ltB5Gdydz67TDc-_yK0CsmZYE3rJ-mho&h=AT3B_edqeXAaOD5ScvpW7MqsdUyI75lgccRS0Ds18GRMMWze4dbzwkCVQf97_nMzloZJQabRlK_9Mb0vHNyl7s4xyj_2MBjrxyfbf2kpxDZw18znsFlR3_I2Gs0i0uM3MKJqpE5DC6rYPQc"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a
+                href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.youtube.com%2F%40SabinLuitel100%3Ffbclid%3DIwAR3v60ywwcINW_4CUFnIoEHUlL-rjcsE3r3lykGQVfOQxnxtlXQmuQSz-jE&h=AT0X0O9-NYZ4gHTFs1-HLirWb2rFqdXITBzNHI8BnuzA_5WsVd-bpslLy9OoyskX1MRSqgS33J1Ahls9DHC5HdrTpL9ygwMr5siy8fk00aEeq_TYgPTQSwI6zML-rjrXVeM0XXVInh7GqIk"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+            </div>
+            <a
+              href="images/sabinluitel.png"
+              download
+              class="btn btn2"
+              >Download</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="Submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+        <div class="Copyright">
+          <p>
+            <center>
+            copyright <i class="fa-solid fa-copyright"></i> sabinluitel<i
+              class="fa-solid fa-heart"
+            ></i>
+          </center>
+          </p>
+          <div class="qr">
+     <center>
+              <img src="images/qr code.jpg" height="300px" width="220px" />
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+        function opentab(tabId) {
+          // Hide all tabs
+          const tabs = document.querySelectorAll(".tab-contents");
+          tabs.forEach((tab) => {
+            tab.classList.remove("active-tab");
+          });
+      
+          // Remove active-link class from all tab links
+          const tabLinks = document.querySelectorAll(".tab-links");
+          tabLinks.forEach((link) => {
+            link.classList.remove("active-link");
+          });
+      
+          // Show the selected tab
+          document.getElementById(tabId).classList.add("active-tab");
+      
+          // Add active-link class to the clicked tab link
+          const clickedTabLink = document.querySelector(
+            `.tab-links[data-tab-id="${tabId}"]`
+          );
+          clickedTabLink.classList.add("active-link");
+        }
+      </script>
+
+<script>
+  var sidemenu = document.getElementById("sidemenu");
+
+  function openmenu() {
+    sidemenu.style.right = "0";
+  }
+
+  function closemenu() {  // Fixed the function name
+    sidemenu.style.right = "-200px";
+  }
+</script>
+
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwDJ6Ihi1AjSn6j9Zq0g-UHHwOudvuO7JtBh_OKPC_UM6gVrLUD8tfniYukdhfEUQmh/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully!"
+        setTimeout(function(){
+          msg.innerHTML = " "
+        },5000)
+        form.reset();
+      })
+
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+
+  </body>
+</html>
